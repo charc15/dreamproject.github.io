@@ -19,12 +19,6 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
-*::selection{
-    color: rgb(255, 0, 0);
-    background-color: #1a1a1a;
-}
-
 html{
     font-family: AbrilFatface;
     font-size: 10px;
@@ -168,6 +162,8 @@ a{
 .avatar{
     background-color: #aaaaaa;
     border: 2px solid black;
+    max-width: 300px;
+    max-height: 500px;
 }
 .avatar p{
     font-family: Lato-regular;
