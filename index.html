@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dream Project</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="images/icon/favicon.ico">
+</head>
+<body>
+	<header>
+		<nav id="navbar">
+			<img src="images/navbar.png" alt="logo de dream team" id="navbar-logo">
+			<a href="#welcome" class="navbar-link">Bienvenido</a>
+			<a href="#jugar" class="navbar-link">Jugar</a>
+			<a href="#quienes-somos" class="navbar-link">Quienes somos</a>
+		</nav>
+	</header>
+	<main>
+		<section id="welcome" class="seccion">
+			<h2 class="titulo">Dream Project</h2>
+			<p style="font-size: 1.5rem;">Donde el conocimiento tiene su origen</p>
+			<p id="welcome-desc">Dream Project es un proyecto que va orientado hacia el público estudiantil que busca nuevos conocimientos y oportunidades explorando un nuevo enfoque educativo que fomenta a la creatividad y al pensamiento racional en el campo científico y matemático</p>
+			<a href="#jugar"><img src="images/arrow.png" alt="flecha hacia abajo" class="arrow" id="welcome-arrow"></a>
+		</section>
+		<section id="jugar" class="seccion">
+			<h2 class="titulo">Jugar</h2>
+			<p style="font-size: 2rem;">Vendrá pronto...</p>
+			<a href="#quienes-somos"><img src="images/arrow.png" alt="flecha hacia abajo" class="arrow" id="jugar-arrow"></a>
+		</section>
+		<section id="quienes-somos" class="seccion">
+			<h2>Quienes Somos</h2>
+			<div id="avatares">
+				<div class="avatar" id="brahian" onclick="info_brahian()" ondblclick="volver_estado_brahian()">
+					<img src="images/avatar/Brahian.png" alt="Avatar de brahiangod" width="300px" height="300px">
+					<h2>Brahian Arias</h2>
+					<p>Programador y diseñador</p>
+					<p>16 años</p>
+				</div>
+				<div class="avatar">
+					<img src="images/avatar/Frank.png" alt="Avatar de frankzzzz" width="300px" height="300px">
+					<h2>Frank Smith</h2>
+					<p>Programador</p>
+					<p>16 años</p>
+				</div>
+				<div class="avatar">
+					<img src="images/avatar/Carlos.png" alt="Avatar de Carlos(gay)" width="300px" height="300px">
+					<h2>Carlos Esteban</h2>
+					<p>Logística</p>
+					<p>15 años</p>
+				</div>
+				<div class="avatar">
+					<img src="images/avatar/Julian.png" alt="Avatar de julian" width="300px" height="300px">
+					<h2>Julian Cuervo</h2>
+					<p>Comediante</p>
+					<p>15 años</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>
