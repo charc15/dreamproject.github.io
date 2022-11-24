@@ -151,14 +151,13 @@ a{
 }
 .materia img{
     width: 40px;
-    vertical-align: middle;
+    float: right;
 }
 .materia a{
     font-size: 1.7rem;
     font-family: 'Lato-regular';
 }
 .materia{
-    display: flex;
     margin-top: 50px;
     background-color: #e6e6e4;
     width: 40%;
@@ -208,6 +207,44 @@ a{
     column-gap: 15px;
 }
 /* Configuración quienes somos (cierre) */
+/* Configuración páginas de documentación (apertura) */
+#doc-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#doc-content div{
+    font-size: 1.5rem;
+    font-family: Lato-regular;
+}
+#doc-content label{
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 55px;
+}
+#doc-enc{
+    margin-bottom: 60px;
+}
+#doc-enc h3{
+    font-family: Lato-regular;
+}
+#ed{
+    padding: 5px;
+}
+#sub{
+    text-align: center;
+    background-color: black;
+    margin-top: 20px;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 3px;
+    color: #aaaaaa;
+}
+#vid-sub{
+    color: #1a1a1a95;
+    font-size: 13px;
+}
+/* Configuración páginas de documentación (cierre) */
 /* Media Queries */
 @media only screen and (max-width: 1150px){
     #navbar{

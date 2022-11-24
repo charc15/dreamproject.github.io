@@ -16,17 +16,33 @@
 		</nav>
 	</header>
 	<main class="seccion">
-		<h2>Física</h2>
-		<p>La materia de la lógica</p>
+		<div id="doc-enc">
+			<h2 class="titulo">Tecnología</h2>
+			<h3>La materia del futuro</h3>
+
+		</div>
 		<div id="doc-content">
-			<p>En este apartado encontrarás nuestro material gratuito para aprender física, contesta el siguiente cuestionario para ayudarnos a brindarte contenido</p>
-			<form action="">
-				<label for="1"><input type="checkbox" name="1" required> Soy nuevo en tecnología</label>
-				<label for="2"><input type="checkbox" name="2" required> Sé sobre herramientas TIC</label>
-				<label for="3"><input type="checkbox" name="3" required> Sé sobre lógica de programación</label>
-				<label for="4"><input type="checkbox" name="4" required> Sé python y java</label>
-				<input type="text" >
-			</form>
+			<div>
+				<p>En este apartado encontrarás nuestro material gratuito para aprender programación, contesta el siguiente cuestionario para ayudarnos a brindarte contenido</p>
+			</div>
+			<div>
+				<form action="">
+					<label for="1"><input type="radio" name="1" required> Soy nuevo en tecnología</label>
+					<label for="2"><input type="radio" name="2" required> Sé sobre herramientas TIC</label>
+					<label for="3"><input type="radio" name="3" required> Sé sobre lógica de programación</label>
+					<label for="4"><input type="radio" name="4" required> Sé python y java</label>
+					<label for="edad">
+						<input type="text" placeholder="Ingresa tu edad" name="edad" id="ed" required>
+					</label>
+					<label for="submit">
+						<input type="submit" value="Siguiente" name="submit" id="sub">
+					</label>
+				</form>
+			</div>
+			<div>
+				<p>¡Introducción a la tecnología!</p>
+				<p id="vid-sub">De: Dream Team</p>
+			</div>
 		</div>
 	</main>
 </body>
