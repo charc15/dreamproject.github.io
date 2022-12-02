@@ -111,6 +111,198 @@ a{
         transform: translateY(0);
     }
 }
+@keyframes step-1{
+    5%{
+        transform: scaleX(calc((500*33%/100)*1));
+    }
+    10%{
+        transform: scaleX(calc((500*33%/100)*2));
+    }
+    15%{
+        transform: scaleX(calc((500*33%/100)*3));
+    }
+    20%{
+        transform: scaleX(calc((500*33%/100)*4));
+    }
+    25%{
+        transform: scaleX(calc((500*33%/100)*5));
+    }
+    30%{
+        transform: scaleX(calc((500*33%/100)*6));
+    }
+    35%{
+        transform: scaleX(calc((500*33%/100)*7));
+    }
+    40%{
+        transform: scaleX(calc((500*33%/100)*8));
+    }
+    45%{
+        transform: scaleX(calc((500*33%/100)*9));
+    }
+    50%{
+        transform: scaleX(calc((500*33%/100)*10));
+    }
+    55%{
+        transform: scaleX(calc((500*33%/100)*11));
+    }
+    60%{
+        transform: scaleX(calc((500*33%/100)*12));
+    }
+    65%{
+        transform: scaleX(calc((500*33%/100)*13));
+    }
+    70%{
+        transform: scaleX(calc((500*33%/100)*14));
+    }
+    75%{
+        transform: scaleX(calc((500*33%/100)*15));
+    }
+    80%{
+        transform: scaleX(calc((500*33%/100)*16));
+    }
+    85%{
+        transform: scaleX(calc((500*33%/100)*17));
+    }
+    90%{
+        transform: scaleX(calc((500*33%/100)*18));
+    }
+    95%{
+        transform: scaleX(calc((500*33%/100)*19));
+    }
+    100%{
+        transform: scaleX(calc((500*33%/100)*20));
+    }
+}
+@keyframes step-2{
+    0%{
+        transform: scaleX(calc((500*33%/100)*20));
+    }
+    5%{
+        transform: scaleX(calc((500*33%/100)*21));
+    }
+    10%{
+        transform: scaleX(calc((500*33%/100)*22));
+    }
+    15%{
+        transform: scaleX(calc((500*33%/100)*23));
+    }
+    20%{
+        transform: scaleX(calc((500*33%/100)*24));
+    }
+    25%{
+        transform: scaleX(calc((500*33%/100)*25));
+    }
+    30%{
+        transform: scaleX(calc((500*33%/100)*26));
+    }
+    35%{
+        transform: scaleX(calc((500*33%/100)*27));
+    }
+    40%{
+        transform: scaleX(calc((500*33%/100)*28));
+    }
+    45%{
+        transform: scaleX(calc((500*33%/100)*29));
+    }
+    50%{
+        transform: scaleX(calc((500*33%/100)*30));
+    }
+    55%{
+        transform: scaleX(calc((500*33%/100)*31));
+    }
+    60%{
+        transform: scaleX(calc((500*33%/100)*32));
+    }
+    65%{
+        transform: scaleX(calc((500*33%/100)*33));
+    }
+    70%{
+        transform: scaleX(calc((500*33%/100)*34));
+    }
+    75%{
+        transform: scaleX(calc((500*33%/100)*35));
+    }
+    80%{
+        transform: scaleX(calc((500*33%/100)*36));
+    }
+    85%{
+        transform: scaleX(calc((500*33%/100)*37));
+    }
+    90%{
+        transform: scaleX(calc((500*33%/100)*38));
+    }
+    95%{
+        transform: scaleX(calc((500*33%/100)*39));
+    }
+    100%{
+        transform: scaleX(calc((500*33%/100)*40));
+    }
+}
+@keyframes step-3{
+    0%{
+        transform: scaleX(calc((500*33%/100)*40));
+    }
+    5%{
+        transform: scaleX(calc((500*33%/100)*41));
+    }
+    10%{
+        transform: scaleX(calc((500*33%/100)*42));
+    }
+    15%{
+        transform: scaleX(calc((500*33%/100)*43));
+    }
+    20%{
+        transform: scaleX(calc((500*33%/100)*44));
+    }
+    25%{
+        transform: scaleX(calc((500*33%/100)*45));
+    }
+    30%{
+        transform: scaleX(calc((500*33%/100)*46));
+    }
+    35%{
+        transform: scaleX(calc((500*33%/100)*47));
+    }
+    40%{
+        transform: scaleX(calc((500*33%/100)*48));
+    }
+    45%{
+        transform: scaleX(calc((500*33%/100)*49));
+    }
+    50%{
+        transform: scaleX(calc((500*33%/100)*50));
+    }
+    55%{
+        transform: scaleX(calc((500*33%/100)*51));
+    }
+    60%{
+        transform: scaleX(calc((500*33%/100)*52));
+    }
+    65%{
+        transform: scaleX(calc((500*33%/100)*53));
+    }
+    70%{
+        transform: scaleX(calc((500*33%/100)*54));
+    }
+    75%{
+        transform: scaleX(calc((500*33%/100)*55));
+    }
+    80%{
+        transform: scaleX(calc((500*33%/100)*56));
+    }
+    85%{
+        transform: scaleX(calc((500*33%/100)*57));
+    }
+    90%{
+        transform: scaleX(calc((500*33%/100)*58));
+    }
+    95%{
+        transform: scaleX(calc((500*33%/100)*59));
+    }
+    100%{
+        transform: scaleX(calc((500*33%/100)*60));
+    }
+}
 /* Configuración barra superior (apertura) */
 #navbar {
     position: fixed;
@@ -151,7 +343,7 @@ a{
 }
 .materia img{
     width: 40px;
-    float: right;
+    vertical-align: middle;
 }
 .materia a{
     font-size: 1.7rem;
@@ -243,6 +435,34 @@ a{
 #vid-sub{
     color: #1a1a1a95;
     font-size: 13px;
+}
+#bar{
+    background-color: #e5e9f2;
+    height: 8px;
+    width: 500px;
+    margin: 0 auto;
+}
+#progress{
+    background-color: #000000;
+    height: 8px;
+    width: 10px;
+}
+#progress-enc{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Lato-regular;
+}
+#progress-foot{
+    font-family: Lato-regular;
+}
+.step-1{
+    animation: step-1 0.8s 0ms forwards;
+}
+.step-2{
+    animation: step-2 0.8s 0ms forwards;
+}
+.step-3{
+    animation: step-3 0.8s 0ms forwards;
 }
 /* Configuración páginas de documentación (cierre) */
 /* Media Queries */

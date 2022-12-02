@@ -37,3 +37,25 @@ function volver_estado_julian(){
     let info = document.getElementById('julian');
     info.innerHTML = '<img src="images/avatar/Julian.png" alt="Avatar de Julian" width="300px" height="300px"><h2>Julian Cuervo</h2><p>Comediante</p><p>15 años</p>'
 }
+
+// Bara de progreso para la documentación
+function steps(){
+    let bar = document.getElementById('progress');
+    let enc = document.getElementById('progress-enc');
+    let ft = document.getElementById('progress-foot');
+    let body = document.getElementById('registro');
+    if(bar.className == ''){
+        bar.className = 'step-1';
+        enc.innerHTML = 'Paso 1 de 3';
+        ft.innerHTML = '¡Yendo paso a paso!';
+        body.innerHTML = '<label><input type="text" placeholder="Usuario" required></label><label><input type="email" placeholder="Correo electrónico" required></label><label><p style="margin-bottom: 30px;">¿Cuál es tu materia favorita?</p><select><option>Selecciona una materia</option><option>Física</option><option>Tecnología</option><option>Química</option><option>Matemáticas</option><option>Historia</option><option>Biología</option></select></label><input type="button" value="Siguiente" name="submit" id="sub" onclick="steps()">';
+    } else if(bar.className == 'step-1'){
+        bar.className = 'step-2';
+        enc.innerHTML = 'Paso 2 de 3';
+        ft.innerHTML = '¡Ya casi!';
+    } else if(bar.className = 'step-2'){
+        bar.className = 'step-3';
+        enc.innerHTML = 'Paso 3 de 3';
+        ft.innerHTML = '¡Vamos a ello!';
+    }
+}

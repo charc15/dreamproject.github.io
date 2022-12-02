@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentación - Física</title>
     <link rel="stylesheet" href="../../styles.css">
+	<script src="../../script.js"></script>
 </head>
 <body>
 	<header>
@@ -25,7 +26,7 @@
 			<div>
 				<p>En este apartado encontrarás nuestro material gratuito para aprender física, contesta el siguiente cuestionario para ayudarnos a brindarte contenido</p>
 			</div>
-			<div>
+			<div id="registro">
 				<form action="">
 					<label for="1"><input type="radio" name="1" required> Soy nuevo en física</label>
 					<label for="2"><input type="radio" name="2" required> Sé mecánica clásica</label>
@@ -35,7 +36,7 @@
 						<input type="text" placeholder="Ingresa tu edad" name="edad" id="ed" required>
 					</label>
 					<label for="submit">
-						<input type="submit" value="Siguiente" name="submit" id="sub">
+						<input type="button" value="Siguiente" name="submit" id="sub" onclick="steps()">
 					</label>
 				</form>
 			</div>
@@ -44,6 +45,13 @@
 				<p id="vid-sub">De: Dream Team</p>
 			</div>
 		</div>
+		<footer>
+			<p id="progress-enc">Paso 0 de 3</p>
+			<div id="bar">
+				<div id="progress" class=""></div>
+			</div>
+			<p id="progress-foot">¡Vamos comenzando!</p>
+		</footer>
 	</main>
 </body>
 </html>
