@@ -1,506 +1,494 @@
+/* Configuración general de la página */
 @font-face {
-    font-family: AbrilFatface;
+    font-family: Abril;
     src: url(font/AbrilFatface-Regular.ttf);
 }
+
 @font-face {
-    font-family: Lato-regular;
+    font-family: Lato;
     src: url(font/Lato-Regular.ttf);
 }
-:root{
-    --navbar-theme: #e6e6e4;
-    --background-color: #ffffff;
-    --text-color: #1a1a1a;
-}
-*{
-    margin: 0;
-    padding: 0;
+
+html{
+    font-size: 20px;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family: Lato;
     overflow-x: hidden;
 }
-html{
-    font-family: AbrilFatface;
-    font-size: 10px;
-    background-color: var(--background-color);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
-a{
-    text-decoration: none;
-    color: var(--text-color);
+
+body {
+    width: 100vw;
 }
-/* Configuración general */
-.arrow{
-    text-align: center;
-    width: 100px;
-    height: 100px;
-}
-.titulo{
-    font-size: 5rem;
-    font-weight: bold;
-}
-.seccion{
-    text-align: center;
-    width: 98vw;
-    height: 100vh;
-    margin: 0 auto;
-    overflow-y: hidden;
-    padding-top: 13vh;
-}
-/* ANIMACIONES */
-@keyframes flecha {
+
+/* Animaciones */
+@keyframes arrow {
     0%{
         transform: translateY(0px);
     }
     5%{
-        transform: translateY(4px);
+        transform: translateY(5px);
     }
     10%{
-        transform: translateY(8px);
+        transform: translateY(10px);
     }
     15%{
-        transform: translateY(12px);
+        transform: translateY(15px);
     }
     20%{
-        transform: translateY(16px);
-    }
-    25%{
         transform: translateY(20px);
     }
+    25%{
+        transform: translateY(25px);
+    }
     30%{
-        transform: translateY(24px);
+        transform: translateY(30px);
     }
     35%{
-        transform: translateY(28px);
+        transform: translateY(35px);
     }
     40%{
-        transform: translateY(32px);
-    }
-    45%{
-        transform: translateY(36px);
-    }
-    50%{
         transform: translateY(40px);
     }
+    45%{
+        transform: translateY(45px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
     55%{
-        transform: translateY(36px);
+        transform: translateY(45px);
     }
     60%{
-        transform: translateY(32px);
+        transform: translateY(40px);
     }
     65%{
-        transform: translateY(28px);
+        transform: translateY(35px);
     }
     70%{
-        transform: translateY(24px);
+        transform: translateY(30px);
     }
     75%{
+        transform: translateY(25px);
+    }
+    80%{
         transform: translateY(20px);
     }
-    80%{
-        transform: translateY(16px);
-    }
     85%{
-        transform: translateY(12px);
+        transform: translateY(15px);
     }
     90%{
-        transform: translateY(8px);
+        transform: translateY(10px);
     }
     95%{
-        transform: translateY(4px);
+        transform: translateY(5px);
     }
     100%{
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
-@keyframes step-1{
-    5%{
-        transform: scaleX(calc((500*33%/100)*1));
+
+@keyframes step-1 {
+    from {
+        width: 10px;
     }
-    10%{
-        transform: scaleX(calc((500*33%/100)*2));
-    }
-    15%{
-        transform: scaleX(calc((500*33%/100)*3));
-    }
-    20%{
-        transform: scaleX(calc((500*33%/100)*4));
-    }
-    25%{
-        transform: scaleX(calc((500*33%/100)*5));
-    }
-    30%{
-        transform: scaleX(calc((500*33%/100)*6));
-    }
-    35%{
-        transform: scaleX(calc((500*33%/100)*7));
-    }
-    40%{
-        transform: scaleX(calc((500*33%/100)*8));
-    }
-    45%{
-        transform: scaleX(calc((500*33%/100)*9));
-    }
-    50%{
-        transform: scaleX(calc((500*33%/100)*10));
-    }
-    55%{
-        transform: scaleX(calc((500*33%/100)*11));
-    }
-    60%{
-        transform: scaleX(calc((500*33%/100)*12));
-    }
-    65%{
-        transform: scaleX(calc((500*33%/100)*13));
-    }
-    70%{
-        transform: scaleX(calc((500*33%/100)*14));
-    }
-    75%{
-        transform: scaleX(calc((500*33%/100)*15));
-    }
-    80%{
-        transform: scaleX(calc((500*33%/100)*16));
-    }
-    85%{
-        transform: scaleX(calc((500*33%/100)*17));
-    }
-    90%{
-        transform: scaleX(calc((500*33%/100)*18));
-    }
-    95%{
-        transform: scaleX(calc((500*33%/100)*19));
-    }
-    100%{
-        transform: scaleX(calc((500*33%/100)*20));
+    to {
+        width: 33%;
     }
 }
-@keyframes step-2{
-    0%{
-        transform: scaleX(calc((500*33%/100)*20));
+
+@keyframes step-2 {
+    from {
+        width: 33%;
     }
-    5%{
-        transform: scaleX(calc((500*33%/100)*21));
-    }
-    10%{
-        transform: scaleX(calc((500*33%/100)*22));
-    }
-    15%{
-        transform: scaleX(calc((500*33%/100)*23));
-    }
-    20%{
-        transform: scaleX(calc((500*33%/100)*24));
-    }
-    25%{
-        transform: scaleX(calc((500*33%/100)*25));
-    }
-    30%{
-        transform: scaleX(calc((500*33%/100)*26));
-    }
-    35%{
-        transform: scaleX(calc((500*33%/100)*27));
-    }
-    40%{
-        transform: scaleX(calc((500*33%/100)*28));
-    }
-    45%{
-        transform: scaleX(calc((500*33%/100)*29));
-    }
-    50%{
-        transform: scaleX(calc((500*33%/100)*30));
-    }
-    55%{
-        transform: scaleX(calc((500*33%/100)*31));
-    }
-    60%{
-        transform: scaleX(calc((500*33%/100)*32));
-    }
-    65%{
-        transform: scaleX(calc((500*33%/100)*33));
-    }
-    70%{
-        transform: scaleX(calc((500*33%/100)*34));
-    }
-    75%{
-        transform: scaleX(calc((500*33%/100)*35));
-    }
-    80%{
-        transform: scaleX(calc((500*33%/100)*36));
-    }
-    85%{
-        transform: scaleX(calc((500*33%/100)*37));
-    }
-    90%{
-        transform: scaleX(calc((500*33%/100)*38));
-    }
-    95%{
-        transform: scaleX(calc((500*33%/100)*39));
-    }
-    100%{
-        transform: scaleX(calc((500*33%/100)*40));
+    to {
+        width: 66%;
     }
 }
-@keyframes step-3{
-    0%{
-        transform: scaleX(calc((500*33%/100)*40));
+
+@keyframes step-3 {
+    from {
+        width: 66%;
     }
-    5%{
-        transform: scaleX(calc((500*33%/100)*41));
-    }
-    10%{
-        transform: scaleX(calc((500*33%/100)*42));
-    }
-    15%{
-        transform: scaleX(calc((500*33%/100)*43));
-    }
-    20%{
-        transform: scaleX(calc((500*33%/100)*44));
-    }
-    25%{
-        transform: scaleX(calc((500*33%/100)*45));
-    }
-    30%{
-        transform: scaleX(calc((500*33%/100)*46));
-    }
-    35%{
-        transform: scaleX(calc((500*33%/100)*47));
-    }
-    40%{
-        transform: scaleX(calc((500*33%/100)*48));
-    }
-    45%{
-        transform: scaleX(calc((500*33%/100)*49));
-    }
-    50%{
-        transform: scaleX(calc((500*33%/100)*50));
-    }
-    55%{
-        transform: scaleX(calc((500*33%/100)*51));
-    }
-    60%{
-        transform: scaleX(calc((500*33%/100)*52));
-    }
-    65%{
-        transform: scaleX(calc((500*33%/100)*53));
-    }
-    70%{
-        transform: scaleX(calc((500*33%/100)*54));
-    }
-    75%{
-        transform: scaleX(calc((500*33%/100)*55));
-    }
-    80%{
-        transform: scaleX(calc((500*33%/100)*56));
-    }
-    85%{
-        transform: scaleX(calc((500*33%/100)*57));
-    }
-    90%{
-        transform: scaleX(calc((500*33%/100)*58));
-    }
-    95%{
-        transform: scaleX(calc((500*33%/100)*59));
-    }
-    100%{
-        transform: scaleX(calc((500*33%/100)*60));
+    to {
+        width: 100%;
     }
 }
-/* Configuración barra superior (apertura) */
+
+/* Diseño navbar */
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100px;
     width: 100vw;
-    height: 15vh;
-    background-color: var(--navbar-theme);
-    z-index: 999;
+    background-color: #e6e6e4;
     display: flex;
-        align-items: center;
-        column-gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    z-index: 2;
 }
-#navbar-logo{
+
+#logo {
     height: 100%;
 }
-.navbar-link{
-    font-size: 3rem;
+
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-family: Abril;
+    font-size: 1.5rem;
 }
-/* Configuración barra superior (cierre) */
-/* Configuración welcome (apertura) */
-#welcome-desc{
-    font-family: Lato-Regular;
-    margin: 50px auto;
+
+#navbar a:hover {
+    color: tomato;
+}
+
+.apartado {
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+}
+
+.arrow {
+    animation: arrow 1.2s infinite;
+    height: 100px;
+}
+
+.apartado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    cursor: pointer;
+    position: absolute;
+    left: 95%;
+    z-index: 3;
+    transform: all 300ms;
+}
+
+.menu-barra {
+    background-color: black;
+    margin-top: 5px;
+    height: 8px;
+    width: 50px;
+    transition: all 300ms;
+}
+
+.barra-1-activa {
+    transform: rotate(45deg);
+    transition: all 300ms;
+}
+
+.barra-2-activa {
+    transform: translateY(-13px) rotate(-45deg);
+    transition: all 300ms;
+}
+
+.barra-3-activa {
+    transform: scale(0);
+    transition: all 300ms;
+}
+
+.menu-activo {
+    transform: translateY(13px);
+    transition: all 300ms;
+}
+
+#side-off {
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    left: 100%;
+    top: 0;
+    background-color: #e6e6e4;
+    transition: all 300ms;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+}
+
+.side-on {
+    transform: translateX(-100%);
+    transition: all 300ms;
+    border-left: 1px black solid;
+}
+
+#enc-menu {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    width: 100%;
+    height: 25%;
+    background-image: url(images/background.webp);
+    border-bottom: 1px solid;
+}
+
+#enc-menu img {
+    height: 80px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 15px;
+    margin-top: 25%;
+    border: 1px solid;
+}
+
+#side-off p {
+    margin-top: 40px;
+}
+
+#side-off a {
+    font-family: Lato;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+/* Diseño página de bienvenida */
+
+#bienvenido h2 {
+    font-family: Abril;
+    font-size: 2.5rem;
+}
+
+#bienvenido h3 {
+    font-family: Abril;
+    font-size: 0.8rem;
+    margin-bottom: 35px;
+}
+
+#bienvenido p {
     text-align: center;
-    font-size: 2rem;
+    width: 95vw;
 }
-#welcome-arrow{
+
+#bienvenido .arrow {
     margin-top: 200px;
-    animation: flecha 1s 0ms infinite;
-    z-index: -1;
 }
-/* Configuración welcome (cierre) */
-/* Configuración de página documentación (apertura) */
-#materias{
+
+/* Diseño página de documentación */
+#documentacion h2{
+    font-family: Abril;
+    font-size: 2.5rem;
+}
+
+#documentacion h3{
+    font-family: Abril;
+    font-size: 0.5rem;
+    margin-bottom: 35px;
+}
+
+#materias {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.materia img{
+
+.materia {
+    width: 210px;
+        max-width: 210px;
+        min-width: 210px;
+    height: 50px;
+        max-height: 50px;
+        min-height: 50px;
+    background-color: #e6e6e4;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 35px 150px;
+}
+
+.materia img {
     width: 40px;
     vertical-align: middle;
 }
+
 .materia a{
-    font-size: 1.7rem;
-    font-family: 'Lato-regular';
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
 }
-.materia{
-    margin-top: 50px;
-    background-color: #e6e6e4;
-    width: 40%;
-    max-width: 40%;
-    padding: 5px;
-    padding-left: 10px;
-    margin: auto;
-    margin-top: 70px;
+
+/* Diseño página de Jugar */
+#jugar {
+    justify-content: center;
 }
-#doc-arrow{
-    margin-top: 100px;
-    animation: flecha 1s 0ms infinite;
+
+#jugar h2{
+    font-family: Abril;
+    font-size: 2.5rem;
 }
-/* Configuración de página documentación (cierre) */
-/* Configuración de página jugar (apertura) */
-#jugar-arrow{
-    animation: flecha 1s 0ms infinite;
-    height: fit-content;
-    margin-top: 350px;
+
+#jugar h3 {
+    font-family: Abril;
+    font-size: 0.8rem;
 }
-/* Configuración de página jugar (cierre) */
-/* Configuración quienes somos (apertura) */
-#quienes-somos{
-    height: 110vh;
+
+#jugar .arrow {
+    margin-top: 85px;
 }
-#quienes-somos h2{
-    font-size: 5rem;
-}
-.avatar{
-    background-color: #aaaaaa;
-    border: 2px solid black;
-    max-width: 300px;
-    max-height: 500px;
-}
-.avatar p{
-    font-family: Lato-regular;
-    font-size: 2rem;
-}
-.avatar:hover{
-    transform: scale(1.1);
-    transition: ease-in-out 0.2s 0ms;
-    overflow-y: hidden;
-}
-#avatares{
+
+/* Diseño página de quienes somos */
+#avatares {
     display: flex;
-    padding: 40px;
-    column-gap: 15px;
+    flex-direction: row;
+    gap: 10px;
 }
-/* Configuración quienes somos (cierre) */
-/* Configuración páginas de documentación (apertura) */
-#doc-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+#quienes-somos {
+    margin-bottom: 40px;
 }
-#doc-content div{
-    font-size: 1.5rem;
-    font-family: Lato-regular;
+
+#quienes-somos h2 {
+    font-family: Abril;
+    font-size: 2.5rem;
 }
-#doc-content label{
-    display: block;
-    margin-bottom: 15px;
-    text-align: left;
-    margin-left: 55px;
+
+#quienes-somos span {
+    font-family: Abril;
+    font-size: 1rem;
+    color: rgb(255, 64, 64);
+    margin-bottom: 30px;
 }
-#doc-enc{
-    margin-bottom: 60px;
-}
-#doc-enc h3{
-    font-family: Lato-regular;
-}
-#ed{
-    padding: 5px;
-}
-#sub{
+
+.avatar {
+    background-color: #aaaaaa;
     text-align: center;
-    background-color: black;
-    margin-top: 20px;
-    padding: 8px 40px;
-    border: none;
-    border-radius: 3px;
-    color: #aaaaaa;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid black;
+    min-height: 427px;
+    height: 427px;
+    max-height: 427px;
 }
-#vid-sub{
-    color: #1a1a1a95;
-    font-size: 13px;
+
+.avatar:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
 }
-#bar{
-    background-color: #e5e9f2;
-    height: 8px;
-    width: 500px;
-    margin: 0 auto;
+
+.avatar img{
+    width: 100%;
+    border-bottom: 2px solid black;
 }
-#progress{
-    background-color: #000000;
-    height: 8px;
-    width: 10px;
+
+.avatar h3{
+    font-family: Abril;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
 }
-#progress-enc{
+
+/* Configuración materias */
+.docs h2 {
+    font-family: Abril;
+    font-size: 2.5rem;
+}
+
+.docs h5 {
+    font-size: 0.8rem;
+}
+
+.docs-content {
     margin-top: 50px;
-    font-size: 20px;
-    font-family: Lato-regular;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
 }
-#progress-foot{
-    font-family: Lato-regular;
+
+.docs-content div {
+    width: 33%;
+    font-size: 0.9rem;
 }
-.step-1{
-    animation: step-1 0.8s 0ms forwards;
+
+.docs-content h3 {
+    font-size: 0.8rem;
+    text-align: center;
 }
-.step-2{
-    animation: step-2 0.8s 0ms forwards;
+
+.docs-content h4 {
+    font-size: 0.5rem;
+    text-align: center;
 }
-.step-3{
-    animation: step-3 0.8s 0ms forwards;
+
+#form {
+    margin-left: 15%;
 }
-/* Configuración páginas de documentación (cierre) */
+
+#form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#doc-btn {
+    color: white;
+    background: black;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+label {
+    font-size: 0.7rem;
+}
 /* Media Queries */
-@media only screen and (max-width: 1150px){
-    #navbar{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    #navbar img{
-        width: 100%;
-        height: 100%;
-    }
-}
-@media only screen and (max-width: 720px){
-    #navbar{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #navbar img{
-        width: 0;
+@media only screen and (max-width: 1230px) {
+    #navbar img[alt="Logo Dream Project"]{
+        position: absolute;
         height: 0;
-        position: fixed;
+        width: 0;
     }
-    #navbar a{
-        font-size: 2rem;
+
+    #materias {
+        grid-template-columns: auto auto;
     }
-    #materias{
-        grid-template-columns: 1fr 1fr;
-    }
-    #avatares{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    #quienes-somos{
-        height: fit-content;
-    }
-    .avatar{
-        margin-top: 30px;
+
+    #menu {
+        left: 90%;
     }
 }
-/* Media Queries */
+
+@media only screen and (max-width: 835px){
+    #navbar a {
+        font-size: 1.2rem;
+    }
+
+    #materias {
+        grid-template-columns: auto;
+    }
+
+    #avatares {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 130px;
+    }
+
+    .apartado {
+        margin-top: 130px;
+    }
+
+    #jugar {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #navbar {
+        gap: 0;
+    }
+}

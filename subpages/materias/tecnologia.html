@@ -4,46 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentación - Tecnología</title>
+    <title>Tecnología</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../images/icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header>
-		<nav id="navbar">
-			<img src="../../images/navbar.png" alt="logo de dream team" id="navbar-logo">
-			<a href="../cuenta/cuenta.html" class="navbar-link">Mi cuenta</a>
-			<a href="../../index.html" class="navbar-link">Volver atrás</a>
-		</nav>
-	</header>
-	<main class="seccion">
-		<div id="doc-enc">
-			<h2 class="titulo">Tecnología</h2>
-			<h3>La materia del futuro</h3>
-
-		</div>
-		<div id="doc-content">
-			<div>
-				<p>En este apartado encontrarás nuestro material gratuito para aprender programación, contesta el siguiente cuestionario para ayudarnos a brindarte contenido</p>
-			</div>
-			<div>
-				<form action="">
-					<label for="1"><input type="radio" name="1" required> Soy nuevo en tecnología</label>
-					<label for="2"><input type="radio" name="2" required> Sé sobre herramientas TIC</label>
-					<label for="3"><input type="radio" name="3" required> Sé sobre lógica de programación</label>
-					<label for="4"><input type="radio" name="4" required> Sé python y java</label>
-					<label for="edad">
-						<input type="text" placeholder="Ingresa tu edad" name="edad" id="ed" required>
-					</label>
-					<label for="submit">
-						<input type="submit" value="Siguiente" name="submit" id="sub">
-					</label>
-				</form>
-			</div>
-			<div>
-				<p>¡Introducción a la tecnología!</p>
-				<p id="vid-sub">De: Dream Team</p>
-			</div>
-		</div>
-	</main>
+    <!-- Barra de navegación -->
+    <header>
+        <div id="navbar">
+            <img src="../../images/navbar.png" alt="Logo Dream Project" id="logo">
+            <a href="../../index.html">Volver atrás</a>
+            <div id="menu">
+                <div class="menu-barra" id="barra-1"></div>
+                <div class="menu-barra" id="barra-2"></div>
+                <div class="menu-barra" id="barra-3"></div>
+            </div>
+            <div id="side-off">
+                <div id="enc-menu">
+                    <img src="../../images/profile.png" alt="Foto">
+                    <h2>Invitado</h2>
+                    <h5>Usuario no registrado</h5>
+                    <p>Regístrate <a href="">aquí</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido de la página -->
+    <section class="apartado docs">
+        <h2>Tecnología</h2>
+        <h5>La materia del futuro</h5>
+        <div class="docs-content">
+            <div>
+                <p style="text-align: center;">En este apartado encontrarás nuestro material gratuito para aprender tecnología, contesta el siguiente cuestionario para ayudarnos a brindarte contenido</p>
+            </div>
+            <div id="form">
+                <form action="" method="get">
+                    <div id="bloque-1" class="visible">
+                        <label for="1qdocs"><input type="checkbox" name="1-q-docs"> Soy nuevo en tecnología</label>
+                        <br>
+                        <label for="2qdocs"><input type="checkbox" name="2-q-docs"> Sé herramientas TIC</label>
+                        <br>
+                        <label for="3qdocs"><input type="checkbox" name="3-q-docs"> Sé HTML, CSS, JavaScript</label>
+                        <br>
+                        <label for="4qdocs"><input type="checkbox" name="4-q-docs"> Sé bases de datos</label>
+                        <br>
+                        <input type="submit" value="Continuar" id="doc-btn"></a>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h3>¡Introducción a la programación</h3>
+                <h4>De: Dream Team</h4>
+            </div>
+        </div>  
+    </section>
+    <!-- JavaScript -->
+    <script src="../../scripts/menu.js"></script>
 </body>
 </html>
