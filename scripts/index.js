@@ -1,7 +1,7 @@
-let brahian = document.getElementById('brahian');
-let frank = document.getElementById('frank');
-let carlos = document.getElementById('carlos');
-let julian = document.getElementById('julian');
+const brahian = document.getElementById('brahian');
+const frank = document.getElementById('frank');
+const carlos = document.getElementById('carlos');
+const julian = document.getElementById('julian');
 
 // Cambiar estado de Brahian
 brahian.addEventListener('click', () =>{
